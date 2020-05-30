@@ -38,10 +38,10 @@ public class App
         String input = "";
         while(!input.equalsIgnoreCase("Q")){
             Random random = new Random();
-            int pickQuestion = random.nextInt(4);
+            int pickQuestion = random.nextInt(28);
             System.out.print(stateMap.get(pickQuestion)+" :::: ");
             Scanner scanner = new Scanner(System.in);
-            input = scanner.next();
+            input = scanner.next().trim();
             checkValidAnswer(pickQuestion, input);
         }
         System.out.println("Bye Bye !!");
